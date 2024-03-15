@@ -28,12 +28,12 @@
     
     <table class="table table-sm table-striped" id="tabla-vendedor">
       <colgroup>
-        <col width="5%">  <!-- # -->
-        <col width="20%"> <!-- Categoria -->
-        <col width="30%"> <!-- Descripción -->
-        <col width="10%"> <!-- Precio -->
-        <col width="10%"> <!-- Garantía -->
-        <col width="10%"> <!-- Fotografía -->
+        <col width="5%">  
+        <col width="20%"> 
+        <col width="30%"> 
+        <col width="10%"> 
+        <col width="10%"> 
+        <col width="10%"> 
       </colgroup>
       <thead>
         <tr>
@@ -61,14 +61,14 @@
         <div class="modal-body">
           <form action="" autocomplete="off" id="form-negocio" enctype="multipart/form-data">
             <div class="row">
-              <!-- NOMBRE COMERCIAL DEL NEGOCIO -->
+             
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="apellidos" class="form-label">Apellidos:</label>
                   <input type="text" class="form-control" id="apellidos">
                 </div>
               </div>
-              <!-- SUBCATEGORIA DEL NEGOCIO -->
+             
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="nombres" class="form-label">Nombres:</label>
@@ -77,14 +77,14 @@
             </div>
 
             <div class="row">
-              <!-- NOMBRE COMERCIAL DEL NEGOCIO -->
+              
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="dni" class="form-label">DNI:</label>
                   <input type="text" class="form-control" id="dni">
                 </div>
               </div>
-              <!-- SUBCATEGORIA DEL NEGOCIO -->
+             
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="telefono" class="form-label">Teléfono</label>
@@ -92,7 +92,7 @@
               </div>
             </div>
             
-              <!-- RUC -->
+             
               <div class="col-md-12">
                 <div class="mb-3">
                   <label for="correo" class="form-label">Correo</label>
