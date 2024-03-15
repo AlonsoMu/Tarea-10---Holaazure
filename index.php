@@ -8,16 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 </head>
 
 <body>
-  
-  
+
+
   <div class="container mt-3">
-    
+
     <div class="alert alert-info" role="alert">
       <h4>Senati</h4>
       <div>Lista de Vendedores</div>
@@ -25,15 +24,15 @@
         Crear
       </button>
     </div>
-    
+
     <table class="table table-sm table-striped" id="tabla-vendedor">
       <colgroup>
-        <col width="5%">  
-        <col width="20%"> 
-        <col width="30%"> 
-        <col width="10%"> 
-        <col width="10%"> 
-        <col width="10%"> 
+        <col width="5%">
+        <col width="20%">
+        <col width="30%">
+        <col width="10%">
+        <col width="10%">
+        <col width="10%">
       </colgroup>
       <thead>
         <tr>
@@ -46,7 +45,7 @@
         </tr>
       </thead>
       <tbody>
-          <!-- DATOS CARGADOS DE FORMA ASINCRONA -->
+        <!-- DATOS CARGADOS DE FORMA ASINCRONA -->
       </tbody>
     </table>
   </div> <!-- Cierre del container -->
@@ -61,47 +60,47 @@
         <div class="modal-body">
           <form action="" autocomplete="off" id="form-negocio" enctype="multipart/form-data">
             <div class="row">
-             
+
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="apellidos" class="form-label">Apellidos:</label>
                   <input type="text" class="form-control" id="apellidos">
                 </div>
               </div>
-             
+
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="nombres" class="form-label">Nombres:</label>
                   <input type="text" class="form-control" id="nombres">
-              </div>
-            </div>
-
-            <div class="row">
-              
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="dni" class="form-label">DNI:</label>
-                  <input type="text" class="form-control" id="dni">
                 </div>
               </div>
-             
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="text" class="form-control" id="telefono">
-              </div>
-            </div>
-            
-             
-              <div class="col-md-12">
-                <div class="mb-3">
-                  <label for="correo" class="form-label">Correo</label>
-                  <input type="text" class="form-control" id="correo">
-              </div>
-            <div class="row">
-              <div class="col-md-12">
-              </div>
-            </div>
+
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="dni" class="form-label">DNI:</label>
+                    <input type="text" class="form-control" id="dni">
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono">
+                  </div>
+                </div>
+
+
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="text" class="form-control" id="correo">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                  </div>
           </form> <!-- FIN DEL FORMULARIO-->
         </div>
         <div class="modal-footer">
@@ -112,36 +111,33 @@
     </div>
   </div>
 
- 
-  
+
+
 
 
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
-  
+
   <script>
-    
     document.addEventListener("DOMContentLoaded", () => {
       const myModal = new bootstrap.Modal(document.getElementById("modal-vendedor"));
 
-      function $(id){
+      function $(id) {
         return document.querySelector(id);
       }
 
-      function listar(){
+      function listar() {
         const parametros = new FormData();
         parametros.append("operacion", "listar")
 
         fetch(`./Controllers/vendedor.controller.php`, {
-          method: 'POST', 
-          body: parametros
-        })
+            method: 'POST',
+            body: parametros
+          })
           .then(respuesta => respuesta.json())
           .then(datosRecibidos => {
             // Recorrer cada fila del arreglo
@@ -172,39 +168,39 @@
           })
       }
 
-      function registrar(){
-        const parametros  = new FormData();
+      function registrar() {
+        const parametros = new FormData();
         parametros.append("operacion", "registrar")
         parametros.append("apellidos", $("#apellidos").value);
         parametros.append("nombres", $("#nombres").value);
         parametros.append("dni", $("#dni").value);
         parametros.append("telefono", $("#telefono").value);
         parametros.append("correo", $("#correo").value);
-        fetch(`./Controllers/vendedor.controller.php` , {
-          method : "POST",
-          body: parametros
-        })
-        .then(respuesta => respuesta.text())
-        .then(datos =>{
+        fetch(`./Controllers/vendedor.controller.php`, {
+            method: "POST",
+            body: parametros
+          })
+          .then(respuesta => respuesta.text())
+          .then(datos => {
             console.log(datos);
             myModal.hide();
             listar();
-        })
-        .catch(e => {
-          console.error(e)
-        })
+          })
+          .catch(e => {
+            console.error(e)
+          })
       }
 
       document.getElementById("guardarDatos").addEventListener('click', () => {
-          registrar();
+        registrar();
       });
 
 
       listar();
-      
+
     })
   </script>
-  
+
 
 </body>
 

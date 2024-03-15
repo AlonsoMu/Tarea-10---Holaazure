@@ -4,7 +4,7 @@
 
 require_once '../Models/Vendedores.php';
 
-if (isset($_POST['operacion'])){
+if (isset($_POST['operacion'])) {
 
   $vendedor = new Vendedor();
 
@@ -17,21 +17,18 @@ if (isset($_POST['operacion'])){
       // render... ENVIAR ETIQUETAS / DATOS NAVEGADOR
       break;
 
-      case 'registrar':
+    case 'registrar':
 
-        $datosEnviar = [
-          'apellidos'     => $_POST['apellidos'],
-          'nombres'       => $_POST['nombres'],
-          'dni'           => $_POST['dni'],
-          'telefono'      => $_POST['telefono'],
-          'correo'        => $_POST['correo'],
-        ];
-  
+      $datosEnviar = [
+        'apellidos'     => $_POST['apellidos'],
+        'nombres'       => $_POST['nombres'],
+        'dni'           => $_POST['dni'],
+        'telefono'      => $_POST['telefono'],
+        'correo'        => $_POST['correo'],
+      ];
 
-        echo json_encode($vendedor->registrar($datosEnviar));
-        break;
+
+      echo json_encode($vendedor->registrar($datosEnviar));
+      break;
   }
-
-
-  
 }
